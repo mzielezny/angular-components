@@ -3,7 +3,7 @@
   "version": "2.4.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/technikhil314/angular-components"
+    "url": "https://github.com/mzielezny/angular-components"
   },
   "description": "Highly configurable, opinionated, themable, light weight (12kb) date and time range picker for angular",
   "keywords": [
@@ -21,12 +21,12 @@
     "bootstrap css"
   ],
   "sideEffects": true,
-  "author": "Nikhil Mehta",
+  "author": "Marcin Zielezny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/technikhil314/angular-components/issues"
+    "url": "https://github.com/mzielezny/angular-components/issues"
   },
-  "homepage": "https://github.com/technikhil314/angular-components/tree/master/projects/angular-datetimerangepicker",
+  "homepage": "https://github.com/mzielezny/angular-components/tree/master/projects/angular-datetimerangepicker",
   "dependencies": {
     "calendarize": "^1.1.1",
     "dayjs": "^1.9.3"
@@ -36,7 +36,7 @@
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
   "scripts": {
-    "prepare": "npm run build"
+    "prepare": "npm install . && npm run build"
   },
   "funding": [
     {
