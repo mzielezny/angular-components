@@ -44,6 +44,8 @@ export class Calendar implements OnChanges {
   @Input() disabledDates: Dayjs[];
   @Input() disabledDays: number[];
   @Input() disableWeekEnds: boolean;
+  @Input() monthsNames: string[];
+  @Input() daysNames: string[];
   // #endregion
 
   maxMonth = 0;
@@ -167,10 +169,11 @@ export class Calendar implements OnChanges {
       if (this.year === this.maxYear && i > this.maxMonth) {
         continue;
       }
+
       this.monthsList.push({
-        name: monthsList[i],
+        name: this.monthsNames[i] ? this.monthsNames[i] : monthsList[i],
         value: i,
-      });
+      }); 
     }
   }
   createCalendarGridData(): void {
@@ -239,6 +242,10 @@ export class Calendar implements OnChanges {
   }
   setWeekDays() {
     let weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+
+    if (this.daysNames) {
+      weekDays = this.daysNames;
+    }
     weekDays = [
       ...weekDays.slice(this.weekStartsOn, 7),
       ...weekDays.slice(0, this.weekStartsOn),

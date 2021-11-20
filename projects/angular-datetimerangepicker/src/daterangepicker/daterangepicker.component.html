@@ -20,7 +20,8 @@
           [disableBeforeStart]="derivedOptions.disableBeforeStart" [timePicker]="derivedOptions.timePicker"
           [singleCalendar]="derivedOptions.singleCalendar" [weekStartsOn]="derivedOptions.weekStartsOn"
           [addTouchSupport]="derivedOptions.addTouchSupport" [disableWeekEnds]="derivedOptions.disableWeekEnds"
-          [disabledDays]="derivedOptions.disabledDays" [disabledDates]="derivedOptions.disabledDates"></calendar>
+          [disabledDays]="derivedOptions.disabledDays" [disabledDates]="derivedOptions.disabledDates"
+          [monthsNames]="derivedOptions.monthsNames" [daysNames]="derivedOptions.daysNames" ></calendar>
       </div>
       <div class="drp-calendar-container" *ngIf="!derivedOptions.singleCalendar">
         <span class="drp-selected-date">{{toDate | formatDate: derivedOptions.displayFormat}}</span>

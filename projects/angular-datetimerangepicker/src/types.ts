@@ -69,4 +69,6 @@ export class Options {
   disableWeekEnds: boolean = false;
   disabledDays: number[] = null;
   disabledDates: Dayjs[] = null;
+  monthsNames: string[] = null; 
+  daysNames: string[] = null;
 }
