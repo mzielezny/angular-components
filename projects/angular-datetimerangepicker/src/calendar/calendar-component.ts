@@ -173,7 +173,7 @@ export class Calendar implements OnChanges {
       this.monthsList.push({
         name: this.monthsNames[i] ? this.monthsNames[i] : monthsList[i],
         value: i,
-      }); 
+      });
     }
   }
   createCalendarGridData(): void {
